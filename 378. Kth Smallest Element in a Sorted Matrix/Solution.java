@@ -3,7 +3,7 @@
   *
   * We propose three methods here. 
   * 	1 PriorityQueue, 
-  *		2 Binary Search (for range),
+  *	2 Binary Search (for range),
   */
   
 public class Solution {
