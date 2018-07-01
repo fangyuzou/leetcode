@@ -8,7 +8,7 @@
   *
   * /
   
-class Solution {
+public class Solution {
     // the key point of this problem is that how we update the information in place that it will not affect the rest.
     
     public void gameOfLife(int[][] board) {
