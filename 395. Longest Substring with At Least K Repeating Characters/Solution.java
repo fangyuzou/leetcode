@@ -28,7 +28,7 @@ class Solution {
             if (count[s.charAt(left) - 'a'] < k) {
                 right = left+1;
                 while (right < s.length() && count[s.charAt(right) - 'a'] < k) right++;
-                return Math.max(helper(s, lo, left-1, k), helper(s, j, hi, k));
+                return Math.max(helper(s, lo, left-1, k), helper(s, right, hi, k));
             }
         }
         return hi-lo+1;
