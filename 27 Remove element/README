@@ -1,0 +1,3 @@
+Remove elements for a given list (in place):
+
+The idea is to copy the list (in place) while ignore the elements with the given value.
