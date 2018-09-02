@@ -1,0 +1,13 @@
+Reverse a linked list: each time take the first ring of the original chain and hook it up to the new chain. For example:
+
+original chain:
+          3 -> 4 -> 5 -> null
+current new chain:
+          2 -> 1 -> null
+-------------------------------------          
+Next stage:
+
+original chain:
+          4 -> 5 -> null
+current new chain:
+          3 -> 2 -> 1 -> null
