@@ -1,0 +1,6 @@
+First, why can we use backtrack?
+The problem can be viewed as a iteration on sets. So we can apply backtrack.
+
+Second, the key point is to eliminate the duplicates.
+This is solved by first sorting the array. If we have used a number we don't use the same number in the next round, because 
+otherwise the permutations generated are already covered in the previous round.
