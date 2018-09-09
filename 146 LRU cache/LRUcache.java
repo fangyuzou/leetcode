@@ -1,7 +1,7 @@
 /** this problem is to design a data structure that supports:
     1. a queue with fixed capacity, any recently used element will be moved to the end of the queue
     2. when capacity is reached, shall remove the first element of the queue before inserting new element
-    3. all get and insert operation shall be O(1)
+    3. all get and put operation shall be O(1)
     
     To safisfy O(1) insertion for a queue, we need to used doubly linked list.
     To identify the position of elements in the Doubly Linked List, we should use a HashMap to store the nodes.
@@ -11,7 +11,8 @@ class LRUcache {
     private final int capacity;
     private final Node head;
     private final Node tail;
-    private final HashMap<int, Node> map;
+    // private final HashMap<int, Node> map;
+    private final HashMap<Integer, Node> map;
     
     public LRUcache(int capacity) {
         this.capacity = capacity;
@@ -54,7 +55,7 @@ class LRUcache {
         }
     }
     
-    private void insert(Node nd) {
+    private void put(Node nd) {
         nd.next = head.next;
         head.next.prev = nd;
         
